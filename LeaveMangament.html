@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaveMangament</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #df2417fa;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 30px;
+            box-shadow: 0 2px 4px rgba(255, 10, 10, 0.1);
+            padding: 20px;
+            margin: 30px;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+            text-align: right;
+            text-decoration: none;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Coapps</h1>
+    </header>
+    <main>
+        <section id="admin-login">
+            <h2>Admin Login</h2>
+            <form action="/admin-login" method="POST">
+                <label for="admin-username">Username:</label>
+                <input type="text" id="admin-username" name="admin-username" required><br>
+                <label for="admin-password">Password:</label>
+                <input type="password" id="admin-password" name="admin-password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="user-login">
+            <h2>User Login</h2>
+            <form action="/user-login" method="POST">
+                <label for="user-username">Username:</label>
+                <input type="text" id="user-username" name="user-username" required><br>
+                <label for="user-password">Password:</label>
+                <input type="password" id="user-password" name="user-password" required><br>
+                <button type="submit">Login</button>
+                <a href="/forgot-password">Forgot Password?</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
